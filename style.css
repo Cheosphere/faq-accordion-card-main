@@ -12,19 +12,21 @@ body {
 }
 
 body {
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     background: linear-gradient(0deg, hsla(240, 73%, 65%, 1) 0%, hsla(257, 74%, 65%, 1) 50%, hsla(273, 75%, 66%, 1) 100%);
+    background-attachment: fixed;
 }
 
 /* ESTILOS CONTENEDOR PRINCIPAL */
 .container {
     width: 100%;
     max-width: 1440px;
-    height: 768px;
+    height: fit-content;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -166,9 +168,7 @@ body {
 @media screen and (max-width: 768px) {
 
     body {
-        min-height: 800px;
         overflow: auto;
-        background-size: 100% 150%;
     }
 
     .container {
