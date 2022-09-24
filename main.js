@@ -1,4 +1,4 @@
-const paragItem = document.querySelectorAll('.card_info_item_title')
+const paragItem = document.querySelectorAll('.card_info_item')
 const btnItem = document.querySelectorAll('.card_info_item_icon')
 const itemInfo = document.querySelectorAll('.card_info_item_parag')
 const itemTitle = document.querySelectorAll('.card_info_item_title')
@@ -6,7 +6,7 @@ const itemTitle = document.querySelectorAll('.card_info_item_title')
 // Recorrido por el array de 5 items
 paragItem.forEach((item, index) => { // Recorremos array y rescatamos su índice
     // Evento que escucha el elemento item que ha recibido un click
-    item.addEventListener('click', function () {
+    item.addEventListener('click', () => {
         // variables
         let valor = index
         let todos = [0, 1, 2, 3, 4]
